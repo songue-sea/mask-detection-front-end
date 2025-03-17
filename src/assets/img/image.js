@@ -1,0 +1,1 @@
+export const image1 = "src/assets/img/ai-generated-8005084_1280.png"
