@@ -1,70 +1,26 @@
-# Getting Started with Create React App
+Voici la partie front-end avec le framework React , pour l'installer correctement veuillez  importer le projet  et suivre  les étapes : 
+1. Créer un dossier vide et cloner le projet
+2. Installer les dépendances avec "npm install"
+3. Démarrer l'application avec "npm run"
+4. Parallèlement démarrer la partie back-end fait en flask via le dépot https://github.com/songue-sea/mask-detection
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Explications Générales:
 
-## Available Scripts
+Nous avons déployé un modèle de classification qui permet de détecter le port de masque. Le modèle est capable de prédire si une personne porte un masque ou non.
+L'entraînement a été fait sous kaggle , vous trouverez le modèle lui même sauvegardé dans le dépot (qui est le back-end sous flask) "https://github.com/songue-sea/mask-detection".
 
-In the project directory, you can run:
+Explication des fonctionnalités:
 
-### `npm start`
+La partie front-end de l'application a été fait exclusivement en react. Elle recouvre les fonctionnalités :
+-d'Authentification : permet à un utilisateur légitime de se connecter 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+-Création de Compte : permet à un utilisateur de créer un compte dans l'application  
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+-Prédiction : l'utilisateur soumet un image et le modèle effectue la prédiction (seules les extensions png , jpg , jpeg sont autorisées) 
 
-### `npm test`
+-Génération d'image adverse : l'utilisateur soumet un image de son choix , précise les paramètres (label , epsilon)  (le label doit être celui qui est attendu (0 = avec masque ; 1 = sans masque ) 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+-Tester un modèle robuste : on a intégré des fonctionnalités de défense , l'utilisateur peut tester les images adverses générés sur ce modèle pour l'évaluer.
 
-### `npm run build`
+NB: En cas d'erreur ou de soucis , veuillez me contacter via l'adresse email "ismailasanguesow@esp.sn" 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
