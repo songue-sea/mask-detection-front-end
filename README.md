@@ -1,7 +1,7 @@
 Voici la partie front-end avec le framework React , pour l'installer correctement veuillez  importer le projet  et suivre  les étapes : 
 1. Créer un dossier vide et cloner le projet
-2. Installer les dépendances avec "npm install"
-3. Démarrer l'application avec "npm run"
+2. Installer les dépendances avec "npm install" (vous devez être dans le même répertoire que  le dossier node_modules) 
+3. Démarrer l'application avec "npm start"
 4. Parallèlement démarrer la partie back-end fait en flask via le dépot https://github.com/songue-sea/mask-detection
 
 Explications Générales:
