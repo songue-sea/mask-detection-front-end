@@ -22,5 +22,5 @@ La partie front-end de l'application a été fait exclusivement en react. Elle r
 
 -Tester un modèle robuste : on a intégré des fonctionnalités de défense , l'utilisateur peut tester les images adverses générés sur ce modèle pour l'évaluer.
 
-NB: En cas d'erreur ou de soucis , veuillez me contacter via l'adresse email "ismailasanguesow@esp.sn" 
+NB: En cas d'erreur ou de soucis , veuillez me contacter via l'adresse email "songue.sea@gmail.com" 
 
